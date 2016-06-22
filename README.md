@@ -146,7 +146,7 @@ You can exit from luajit by pressing Ctrl+C.
 Finnaly, set Torch_DIR as an Environment Variable to the LuaJIT-Luarocks-Torch7_ROOT%\share\cmake\torch directory.
 ```sh
 setx Torch_DIR %LuaJIT-Luarocks-Torch7_ROOT%\share\cmake\torch
-``
+```
 
 # Installing Torch Modules
 When you install torch on Unix environments, it will automatically installs "lots of nice goodies". 
@@ -194,7 +194,7 @@ cd %LuaJIT-Luarocks-Torch7_ROOT%\extra\torch-signal
 luarocks make ./rocks/signal-scm-1.rockspec
 ```
 
-# Installing cutorch, cunn, cunnx and cudnn Modules
+## Installing cutorch, cunn, cunnx and cudnn Modules
 Installing the cutorch module requires some additional steps. 
 First of all, make sure you have already installed CUDA Toolkit on your machine.
 Currently, there is a problem with the CMakeCache.txt (probably some linux endline that are not properly interpreted by windows).
@@ -254,7 +254,7 @@ luarocks install cudnn
 ```
 on a NTCP session.
 
-# Installing qtlua and qttorch
+## Installing qtlua and qttorch
 Make sure you have installed Qt 4.X on your machine and qmake.exe is on the system path.
 Installing qtlua is then straightforward. On a NTCP, run
 
