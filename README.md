@@ -3,8 +3,8 @@ LuaJIT + Luarocks + Torch7 on Windows
 I should start by strongly recommending you to use Torch on a Unix environment. It would be extremely easier to set everything up. 
 Specially, if you do not need CUDA capabilities, I urge you to try to set up a virtual Linux machine using Windows Hyper-V, or try the new Linux Subsystem for Windows (aka Bash on Windows).
 That being said, if you, like me, prefer working on your Windows machine, this guide will walk you through all the steps.
-This is an easy to use (well, relitively) installation for _recent_ versions of LuaJIT, luarocks, torch7 and various torch7 modules on Windows.
-The provided LuaJIT, luarocks, torch7 and its modules point to their respective git repository. Unless specified (i.e. necessary), no changes are made except for the compilation and installation processes.
+This is an easy to use (well, relatively) installation for _recent_ versions of LuaJIT, luarocks, torch7 and various torch7 modules on Windows.
+The provided LuaJIT, luarocks, torch7 and torch modules point to their respective git repository. Unless specified (i.e. absolutely necessary), no changes are made except for the compilation and installation processes.
 This repository is forked from [torch/luajit-rocks](https://github.com/torch/luajit-rocks) with imported changes from [diz-vara/luajit-rocks](https://github.com/diz-vara/luajit-rocks).
 
 # Current Module Versions
