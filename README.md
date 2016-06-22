@@ -266,7 +266,7 @@ And for qttorch,
 ```sh
 cd %LuaJIT-Luarocks-Torch7_ROOT%\extra\qttorch
 luarocks make ./rocks/qttorch-scm-1.rockspec
-``
+```
 
 # Currently not Working
 
