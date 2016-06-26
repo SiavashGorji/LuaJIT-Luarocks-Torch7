@@ -192,6 +192,13 @@ luarocks install fftw3
 
 cd %LuaJIT-Luarocks-Torch7_ROOT%\extra\torch-signal
 luarocks make ./rocks/signal-scm-1.rockspec
+
+luarocks install class
+luarocks install rational
+luarocks install cairo
+
+cd %LuaJIT-Luarocks-Torch7_ROOT%\extra\luasocket
+luarocks make ./rockspec/luasocket-3.0rc2-1.rockspec
 ```
 
 ## Installing cutorch, cunn, cunnx and cudnn Modules
@@ -267,6 +274,21 @@ And for qttorch,
 cd %LuaJIT-Luarocks-Torch7_ROOT%\extra\qttorch
 luarocks make ./rocks/qttorch-scm-1.rockspec
 ```
+
+## Installing iTorch
+1. Install [ZeroMQ](http://zeromq.org/) (there are pre-built binaries for VS2013 [here](http://zeromq.org/distro:microsoft-windows)). 
+2. Install lua lzmq module
+```sh
+luarocks install lzmq ZMQ_DIR="path-to-ZeroMQ"
+```
+3. Install [OpenSSL](https://www.openssl.org/) (there are pre-built binaries [here](https://wiki.openssl.org/index.php/Binaries)).
+4. Install luacrypto, uuide and lbase64 modules
+```sh
+luarocks install luacrypto OPENSSL_DIR="path-to-OpenSSL"
+luarocks install uuid
+luarocks install lbase64
+``` 
+5.
 
 # Currently not Working
 
